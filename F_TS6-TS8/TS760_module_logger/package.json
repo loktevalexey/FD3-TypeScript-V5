@@ -1,0 +1,16 @@
+{
+  "name": "tsmodulesdemo",
+  "version": "1.0.0",
+  "description": "TypeScript modules demo",
+  "main": "app.js",
+  "scripts": {
+    "build": ".\\node_modules\\.bin\\webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^3.1.1",
+    "typescript": "^2.6.2",
+    "webpack": "^3.8.1"
+  }
+}
