@@ -8,3 +8,13 @@ console.log(Color.YELLOW);
 console.log(Color.GREEN);
 
 console.log(Color[1]);
+
+
+// это не enum
+
+var myStr:'First'|'Second';
+var myStr2:5|'Second';
+
+myStr='Second';
+myStr2=5;
+// myStr='Third'; // ошибка

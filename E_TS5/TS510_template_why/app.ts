@@ -91,13 +91,11 @@ let carIndex3:number=carsStorageArea.storeItem(car3);
 // мы без проблем можем получить со склада объект, 
 // реализующий интерфейс IStorageItem
 let item01:IStorageItem=computersStorageArea.getItem(computerIndex2);
-let item02:IStorageItem=carsStorageArea.getItem(computerIndex2);
+let item02:IStorageItem=carsStorageArea.getItem(carIndex2);
 // мы НЕ можем без преобразования типа получить ни Car, ни Computer
 // let item11:Car=carsStorageArea.getItem(carIndex2); // ошибка
 // let item12:Computer=computersStorageArea.getItem(computerIndex2); // ошибка
 // мы должны применять явное преобразование типа, 
 // что по сути отключает статическую типизацию
-let item21:Car=
-  <Car>carsStorageArea.getItem(carIndex2);
-let item22:Computer=
-  <Computer>computersStorageArea.getItem(computerIndex2);
+let item21:Car=<Car>carsStorageArea.getItem(carIndex2);
+let item22:Computer=<Computer>computersStorageArea.getItem(computerIndex2);

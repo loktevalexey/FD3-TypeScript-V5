@@ -17,7 +17,7 @@ const kvadrat2 = (v:number):number => {
     return v*v;
 }
 
-const myAlert2 = (txt:string) => {
+const myAlert2 = (txt:string):void => {
     alert(txt);
 }
 

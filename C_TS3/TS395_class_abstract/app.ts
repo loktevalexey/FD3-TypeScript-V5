@@ -48,6 +48,7 @@ function trainer(tr:Transp):void {
         tr.start(100);
         tr.stop();
     }
+    tr.show();
     console.log('training finished');
 }
 
